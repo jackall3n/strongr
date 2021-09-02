@@ -1,0 +1,40 @@
+{
+  "name": "stronger",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt -p 5656",
+    "start:client": "nuxt -p 5656",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
+    "lint": "yarn lint:js"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/pwa": "^3.3.5",
+    "@types/express": "^4.17.12",
+    "core-js": "^3.15.1",
+    "date-fns": "^2.23.0",
+    "express": "^4.17.1",
+    "lodash": "^4.17.21",
+    "nuxt": "^2.15.7",
+    "vuex-persistedstate": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.14.7",
+    "@nuxt/types": "^2.15.7",
+    "@nuxt/typescript-build": "^2.1.0",
+    "@nuxtjs/eslint-config-typescript": "^6.0.1",
+    "@nuxtjs/eslint-module": "^3.0.2",
+    "@nuxtjs/tailwindcss": "^4.2.0",
+    "@types/lodash": "^4.14.172",
+    "eslint": "^7.29.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-nuxt": "^2.0.0",
+    "eslint-plugin-vue": "^7.12.1",
+    "postcss": "^8.3.5",
+    "prettier": "^2.3.2"
+  }
+}
