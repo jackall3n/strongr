@@ -5,7 +5,10 @@ import { Injectable } from '@nestjs/common';
 export class ParseService {
   constructor(private http: HttpService) {}
 
-  async workouts(user: string, options: { after?: string }) {
+  async workouts(
+    user: string,
+    options: { after?: string; template?: boolean },
+  ) {
     const body = {
       _method: 'GET',
       count: 1,
@@ -33,9 +36,6 @@ export class ParseService {
           objectId: user,
         },
         isHidden: 0,
-        completionDate: {
-          $exists: true,
-        },
       },
     };
 
